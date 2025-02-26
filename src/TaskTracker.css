@@ -1,0 +1,45 @@
+
+
+.app {
+    margin-top: 20px;
+  }
+  
+  .app {
+    color: #00796b; /* Teal color */
+  }
+  
+  .app {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .app {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .app {
+    margin-left: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .app {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  

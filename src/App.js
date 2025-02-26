@@ -1,11 +1,16 @@
 import React from 'react'
 import './App.css'
+import './TaskTracker.css'
 import {Dexie} from 'dexie'
 import {useLiveQuery} from 'dexie-react-hooks'
+
 
 const db = new Dexie('todoApp')
 db.version (1).stores( {
   todos: '++id,task,completed,date'
+
+ 
+  
 })
 
 const {todos} = db
@@ -13,16 +18,15 @@ const {todos} = db
 const App = () => {
   const allItems = useLiveQuery(()=> todos.toArray(), [])
 
-todos.where('completed').equals(true) .toArray()
+todos.where('completed').equals(true).toArray()
 
-const completedItems = allItems?.filter(item => item.completed === true)
 
 const addTask = async (event) => {
   event.preventDefault()
   const taskField = document.querySelector('#taskInput')
   
   await todos.add({
-    task: taskField.value,
+    task: taskField['value'],
     completed: false
   })
 
@@ -37,7 +41,7 @@ const deleteTask = async (id) => todos.delete(id)
 return (
     <div className="container">
       <h3 className="teal-text center-align">Todo App</h3>
-      <form className="add-item-form" on Submit={addTask}>
+      <form className="add-item-form" onSubmit={addTask}>
         <input
           type="text"
           id="taskInput"
