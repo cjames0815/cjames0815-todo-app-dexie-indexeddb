@@ -77,6 +77,7 @@ const App = () => {
                 delete
               </i>
             </div>
+            
           ))}
         </div>
       </div>

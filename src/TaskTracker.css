@@ -1,19 +1,19 @@
 
 
-.app {
+.container {
     margin-top: 20px;
   }
   
-  .app {
+  .teal-textcenter-align{
     color: #00796b; /* Teal color */
   }
   
-  .app {
+  .add-item-form {
     display: flex;
     margin-bottom: 10px;
   }
   
-  .app {
+  .text {
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
